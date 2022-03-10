@@ -16,8 +16,8 @@ Para tener el documento de configuraciones .env para copiar el example usar el c
 cp .env.example .env
 ```
 ### Configuracion BD
--Para configurar la base de datos necesitas primero crear una con el nombre que desees
-Una vez creada la base de datos necesitas configurar el archivo .env en estos campos
+- Para configurar la base de datos necesitas primero crear una con el nombre que desees
+- Una vez creada la base de datos necesitas configurar el archivo .env en estos campos
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -27,7 +27,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 **Una vez creada la base de datos**
-Realizar el comando en terminal:
+- Realizar el comando en terminal:
 ```
 php artisan migrate
 ```
