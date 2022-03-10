@@ -1,7 +1,7 @@
 # API de laravel
 
 
-##Para primer uso
+## Para primer uso
 
 Para instalar los node_modules ejecutar en la terminal el comando:
 ```
@@ -15,7 +15,7 @@ Para tener el documento de configuraciones .env para copiar el example usar el c
 ```
 cp .env.example .env
 ```
-###Configuracion BD
+### Configuracion BD
 -Para configurar la base de datos necesitas primero crear una con el nombre que desees
 Una vez creada la base de datos necesitas configurar el archivo .env en estos campos
 ```
