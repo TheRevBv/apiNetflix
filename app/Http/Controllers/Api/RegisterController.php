@@ -41,7 +41,7 @@ $validator = Validator::make($request->all(), [
         $data = $request->validate([
             'name' => 'required|string',
             'email' => 'required|email',
-            'password' => ['required', 'confirmed', Password::min(8)->mixedCase()->numbers()->symbols()]
+            'password' => ['required|confirmed', Password::min(8)->mixedCase()->numbers()->symbols()]
         ]);
         $user = User::create([
             'name' => $data['name'],
@@ -64,7 +64,7 @@ $validator = Validator::make($request->all(), [
     {
         $credentials = $request->validate([
             'email' => 'required|email',
-            'password' => ['required'],
+            'password' => ['required | confirmed'],
             'remember' => 'boolean'
         ]);
 

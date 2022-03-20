@@ -10,7 +10,13 @@ class Peliculas extends Model
     use HasFactory;
 
     protected $fillable = [
-        'titulo', 'imagen', 'descripcion', 'actores', 'fechaEstreno', 'url'
+        'titulo',
+        'imagen',
+        'descripcion',
+        'actores',
+        'generos',
+        'fechaEstreno',
+        'video'
     ];
 
     protected $hidden = ['created_at', 'updated_at'];

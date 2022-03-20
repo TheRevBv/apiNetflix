@@ -30,11 +30,12 @@ class PeliculasController extends BaseController
     {
         $request->validate([
             'titulo' => 'required',
-            'imagen' => 'required',
             'descripcion' => 'required',
             'actores' => 'required',
+            'generos' => 'required',
             'fechaEstreno' => 'required',
-            'url' => 'required',
+            'imagen' => 'required',
+            'video' => 'required',
         ]);
         //PAGINATE funciona para mostrar un numero limitado de registros por paginas
         // return Peliculas::create($request->paginate(numero de elementos a mostrar));

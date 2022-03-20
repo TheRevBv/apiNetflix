@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
-use App\Http\Controllers\Api\RegisterController;
 use App\Http\Controllers\Api\PeliculasController;
+// use App\Http\Controllers\Api\RegisterController;
 
 
 //Protected Routes
@@ -21,8 +21,8 @@ Route::get('/peliculas/search/{titulo}', [PeliculasController::class, 'search'])
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
-Route::post('/register2', [RegisterController::class, 'register']);
-Route::post('/login2', [RegisterController::class, 'login']);
+// Route::post('/register2', [RegisterController::class, 'register']);
+// Route::post('/login2', [RegisterController::class, 'login']);
 
 
 // Route::controller(RegisterController::class)->group(function () {

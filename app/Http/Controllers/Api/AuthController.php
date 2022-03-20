@@ -11,7 +11,11 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    //Registro
+    /**
+     * Registro Api
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function register(Request $request)
     {
         $fields = $request->validate([
@@ -35,7 +39,11 @@ class AuthController extends Controller
 
         return response($response, 200);
     }
-    //Login
+    /**
+     * Login api
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function login(Request $request)
     {
         $fields = $request->validate([
@@ -62,13 +70,25 @@ class AuthController extends Controller
 
         return response($response, 200);
     }
-    //Salir
-    public function logout(Request $request)
+    /**
+     * Logout api
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function logout()
     {
         auth()->user()->tokens()->delete();
 
         return [
             'msg' => 'Logged out'
         ];
+    }
+    /**
+     * Logout api
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function userProfile(Request $request)
+    {
     }
 }

@@ -17,11 +17,12 @@ class PeliculasResource extends JsonResource
         return [
             'id' => $this->id,
             'titulo' => $this->titulo,
-            'imagen' => $this->imagen,
             'descripcion' => $this->descripcion,
             'actores' => $this->actores,
+            'generos' => $this->generos,
             'fechaEstreno' => $this->fechaEstreno,
-            'url' => $this->url,
+            'imagen' => $this->imagen,
+            'video' => $this->video,
             // 'created_at' => $this->created_at->format('d/m/Y'),
             // 'updated_at' => $this->updated_at->format('d/m/Y'),
         ];

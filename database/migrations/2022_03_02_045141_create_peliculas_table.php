@@ -14,13 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('peliculas', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('titulo');
-            $table->string('imagen');
             $table->mediumText('descripcion');
             $table->string('actores');
+            $table->string('generos');
             $table->date('fechaEstreno');
-            $table->longText('url');
+            $table->longText('imagen');
+            $table->longText('video');
             $table->timestamps();
         });
     }
